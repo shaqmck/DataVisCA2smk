@@ -11,7 +11,7 @@ import plotly.express as px
 
 from app import app
 
-covid = pd.read_csv(r'C:\Users\shaqu\OneDrive\Desktop\Masters Course\DataVis\CA2\covid_data.csv')
+covid = pd.read_csv(r'https://raw.githubusercontent.com/shaqmck/DataVisCA2smk/covid_data.csv')
 covid['date'] = pd.to_datetime(covid['date'])
 covid['month_year'] = pd.to_datetime(covid['month_year'],format='%Y-%m').dt.to_period('M') 
 
